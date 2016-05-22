@@ -1,0 +1,211 @@
+body{ 
+	color:#646464;
+	font: normal 20px Helvetica, Arial, sans-serif;
+}
+.imagine{
+    background:white url("img/pic.png");
+    height:89px;
+    width:94px;
+}
+.pane-left{
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 450px;
+    position: absolute;
+    border-right: 2px solid #a3c3db;
+
+}
+.info{
+	color:#333;
+	font-size:17px;
+	margin-top:15px;
+	margin-left:20px;
+	border-bottom: 1px solid #ededed;
+}
+.label-info{
+    color: #999;
+    font-size: 18px;
+ font-weight: bold;
+ cursor:default;
+}
+.label-input{
+	color: #999;
+    font-size: 18px;
+ font-weight: bold;
+ cursor:default;
+  float: left;
+  width: 100px;
+  line-height: 40px;
+  padding-right: 10px;
+   text-align: right;
+  
+}
+input.field{
+  padding: 0 10px;
+
+  width: 200px;
+
+  height: 30px;
+
+}
+
+.pane-right{
+    left: 452px;
+
+    width:66%;
+    position: absolute;
+}
+.pane-right-top{
+	border-bottom: 1px solid #a3c3db;
+	height:31px;
+
+}
+.pane-right-bottom{
+	color:#333;
+	font-size:25px;
+	margin-left:90px;
+	margin-top:30px;
+}
+input.search{
+	color:#C3C3C3;
+	border: solid 0 transparent;
+    border-bottom: 1px solid #a3c3db;
+    background-color:#F9F9F9;
+    width: 100%;
+    height:40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-image: url("img/searchicon.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+label{
+	cursor:pointer;
+	font-size: 21px; 
+    color: #007aff;
+	margin-left:10px;
+}
+.del{
+	cursor:pointer;
+	font-size: 21px; 
+    color: #FC3D39;
+	margin-left:10px;
+}
+#list1 {
+	height: 93%;
+	overflow: visible;
+	position: relative;
+	width: auto
+	zoom: 1;
+	margin:0;
+}
+.ioslist-wrapper{
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	width: 100%;
+}
+
+
+.ioslist-group-container {
+	margin: 0;
+	min-height: 1px;
+	overflow: hidden;
+	padding: 24px 0 0 0;
+	position: relative;
+}
+.ioslist-group-header, .ioslist-fake-header {
+	background-color: #ececec;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+	color: #333;
+    font-size: 17px;
+	margin: 0;
+	padding: 2px 0 0 12px;
+	position: absolute;
+  text-shadow: 0px 1px 0px white;
+      text-align: left;
+    text-rendering: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.ioslist-group-header {
+	    color: #333;
+    text-align: left;
+    text-rendering: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 17px;
+    text-shadow: 0px 1px 0px white;
+    position: absolute;
+    padding-top: 2px;
+	bottom: auto;
+	min-height: 1px;
+	top: 0;
+	width: 100%
+}
+.ioslist-fake-header {
+	
+	z-index: 1000;
+}
+
+.ioslist-fake-header.ioslist-hidden {
+	visibility: hidden;
+}
+.ioslist-group-container.ioslist-animated .ioslist-group-header {
+	bottom: 0;
+	top: auto;
+}
+
+.ioslist ul, .ioslist dl ,.ioslist a{
+	text-decoration: none;
+	color:#333;
+	font-weight: bold;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ioslist li, .ioslist dt {
+	background-color:#F9F9F9;
+   font: bold 18px/45px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+}
+.ioslist li  {
+	 background-image: url("img/contact.png");
+    background-position: 400px 10px; 
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+	 border-top: 1px solid #e7e7e7;
+	    border-bottom: 1px solid #e7e7e7;
+    box-shadow: 0px 1px 0px #ffffff;
+}
+/*.ioslist li.active{ 
+color:#333; 
+background-color: #d8eefa;
+}*/
+.ioslist li:hover{ 
+color:#333; 
+background-color: #d8eefa;
+}
+
+.ioslist dd {
+    padding: 0 12px;
+}
+
+[data-ios="true"] .ioslist-group-header,
+[data-ios="true"] .ioslist-fake-header {
+	width: 288px; /*scrollbars aren't visible in iOS devices, so make the headers wider */
+}
